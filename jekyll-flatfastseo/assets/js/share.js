@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-share]').forEach(b=>{b.onclick=()=>{let u=encodeURIComponent(location.href);let m=b.dataset.share;let s={facebook:`https://facebook.com/sharer/sharer.php?u=${u}`,twitter:`https://twitter.com/intent/tweet?url=${u}`,telegram:`https://t.me/share/url?url=${u}`,whatsapp:`https://wa.me/?text=${u}`}[m];window.open(s,'share','width=500,height=400')}});
